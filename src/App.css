@@ -585,10 +585,7 @@ p {
   margin-top: 10px;
 }
 
-/* Improve grid responsiveness */
-.project-grid {
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-}
+
 
 /* Fix image scaling */
 .project-image {
