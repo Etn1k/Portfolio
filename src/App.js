@@ -1,4 +1,6 @@
 import './App.css';
+import { useState } from "react";
+const [menuOpen, setMenuOpen] = useState(false);
 import eliVillasImg from './assets/images/Eli.png';
 import syArYoImg from './assets/images/Sy-Ar.png';
 import yesEducationImg from './assets/images/Yes.png';
@@ -13,16 +15,19 @@ function App() {
     <h1 className="logo">Etnik Isufi</h1>
 
     {/* BURGER ICON */}
-    <div className="menu-toggle">
+    <div
+      className="menu-toggle"
+      onClick={() => setMenuOpen(!menuOpen)}
+    >
       ☰
     </div>
 
-    <ul className="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#experience">Experience</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#skills">Skills</a></li>
-      <li><a href="#contact">Contact</a></li>
+    <ul className={`nav-links ${menuOpen ? "active" : ""}`}>
+      <li><a href="#about" onClick={() => setMenuOpen(false)}>About</a></li>
+      <li><a href="#experience" onClick={() => setMenuOpen(false)}>Experience</a></li>
+      <li><a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a></li>
+      <li><a href="#skills" onClick={() => setMenuOpen(false)}>Skills</a></li>
+      <li><a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a></li>
     </ul>
   </div>
 </nav>
