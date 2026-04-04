@@ -515,3 +515,190 @@ h2 {
     font-size: 2rem;
   }
 }
+
+/* Better scaling for text */
+h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+h2 {
+  font-size: clamp(1.8rem, 4vw, 2.5rem);
+}
+
+p {
+  font-size: clamp(0.95rem, 2vw, 1.1rem);
+}
+
+/* Fix hero layout */
+.hero-content h2 {
+  display: block;
+  margin-left: 0;
+  margin-top: 10px;
+}
+
+/* Improve grid responsiveness */
+.project-grid {
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+/* Fix image scaling */
+.project-image {
+  height: auto !important;
+  max-height: none;
+}
+
+/* Navbar wrap */
+.nav-links {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ============================= */
+/* 📱 MOBILE (≤768px) */
+/* ============================= */
+@media (max-width: 768px) {
+
+  .navbar .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .hero {
+    padding: 100px 20px 60px;
+  }
+
+  .hero .container {
+    flex-direction: column;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .profile-placeholder {
+    width: 150px;
+    height: 150px;
+  }
+
+  .about-content {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .about-stats {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .skills-content {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-content {
+    grid-template-columns: 1fr;
+  }
+
+  .timeline-content {
+    margin-left: 40px;
+  }
+
+  .timeline::before {
+    left: 20px;
+  }
+
+  .timeline-item::before {
+    left: 12px;
+  }
+
+  section {
+    padding: 60px 20px;
+  }
+}
+
+/* ============================= */
+/* 📱 SMALL PHONES (≤480px) */
+/* ============================= */
+@media (max-width: 480px) {
+
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero h2 {
+    font-size: 1.1rem;
+  }
+
+  .cta-btn {
+    padding: 10px 18px;
+    font-size: 0.9rem;
+  }
+
+  .project-card {
+    padding: 20px;
+  }
+
+  .contact-form {
+    padding: 20px;
+  }
+
+  .container {
+    padding: 0 15px;
+  }
+}
+
+/* ============================= */
+/* 💻 LARGE SCREENS (≥1200px) */
+/* ============================= */
+@media (min-width: 1200px) {
+
+  .hero .container {
+    max-width: 1300px;
+  }
+
+  .container {
+    max-width: 1300px;
+  }
+
+  .project-grid {
+    gap: 40px;
+  }
+}
+
+/* ============================= */
+/* ✨ SMALL UI IMPROVEMENTS */
+/* ============================= */
+
+/* Smooth hover */
+.project-card {
+  transition: all 0.3s ease;
+}
+
+.project-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Button feel */
+.cta-btn, .submit-btn {
+  transition: all 0.3s ease;
+}
+
+.cta-btn:hover, .submit-btn:hover {
+  transform: translateY(-2px);
+}
+
+/* Better spacing */
+section {
+  scroll-margin-top: 100px;
+}
