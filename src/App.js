@@ -14,7 +14,7 @@ const [menuOpen, setMenuOpen] = useState(false);
     <div className="portfolio">
       <nav className="navbar">
   <div className="container">
-    <h1 className="logo">Etnik Isufi</h1>
+    <h1 className="logo">Portfolio</h1>
 
     {/* BURGER ICON */}
     <div
