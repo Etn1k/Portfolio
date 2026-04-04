@@ -522,10 +522,10 @@ h2 {
   }
 
   .hero-content h2 {
-   display: block;
-    margin-left: 0;
-    margin-top: 10px;
-    margin: auto;
+   margin-bottom: 20px;
+    text-align: center;
+    font-family: serif;
+    text-decoration: underline;
   }
 
   .about-content {
