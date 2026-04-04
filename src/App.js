@@ -1,6 +1,5 @@
 import './App.css';
 import { useState } from "react";
-const [menuOpen, setMenuOpen] = useState(false);
 import eliVillasImg from './assets/images/Eli.png';
 import syArYoImg from './assets/images/Sy-Ar.png';
 import yesEducationImg from './assets/images/Yes.png';
@@ -8,6 +7,9 @@ import dentalGlossaryImg from './assets/images/Dental.png';
 import devcollabImg from './assets/images/Dev.png';
 
 function App() {
+
+const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div className="portfolio">
       <nav className="navbar">

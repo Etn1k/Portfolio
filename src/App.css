@@ -455,18 +455,20 @@ h2 {
   background-color: #2980b9;
 }
 
-.menu-toggle {
-  display: none;
-  font-size: 1.8rem;
-  cursor: pointer;
-  z-index: 1100;
-}
-
 /* Hide burger on desktop */
 .menu-toggle {
   display: none;
-  font-size: 28px;
+  font-size: 30px;
   cursor: pointer;
+  z-index: 9999;
+  position: relative;
+}
+
+.navbar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
 }
 
 
