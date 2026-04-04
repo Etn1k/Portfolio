@@ -462,34 +462,47 @@ h2 {
   z-index: 1100;
 }
 
+/* Hide burger on desktop */
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
 
 /* Responsive */
 @media (max-width: 768px) {
-  /* Better mobile menu without JS */
-@media (max-width: 768px) {
+   .menu-toggle {
+    display: block;
+  }
 
   .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: white;
+
     flex-direction: column;
     align-items: center;
-    gap: 10px;
-    background: white;
-    padding: 15px 0;
-    border-radius: 10px;
-    margin-top: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: 0.3s ease;
+  }
+
+  /* when menu is open */
+  .nav-links.active {
+    max-height: 300px;
+    padding: 20px 0;
+    opacity: 1;
   }
 
   .nav-links li {
-    margin: 0;
+    margin: 10px 0;
   }
 
-  .nav-links a {
-    padding: 10px 20px;
-    display: block;
-    width: 100%;
-    text-align: center;
-  }
-}
   .hero .container {
     flex-direction: column;
     text-align: center;
