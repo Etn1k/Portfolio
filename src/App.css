@@ -521,6 +521,12 @@ h2 {
     text-align: center;
   }
 
+  .hero-content h2 {
+   display: block;
+    margin-left: 0;
+    margin-top: 10px;
+  }
+
   .about-content {
     flex-direction: column;
   }
