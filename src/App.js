@@ -127,7 +127,7 @@ function App() {
                 <span>JavaScript</span>
               </div>
               <div className="project-links">
-                <a href="#" className="project-link">View Live</a>
+                <a href="#projects" className="project-link">View Live</a>
               </div>
             </div>
             <div className="project-card">
@@ -144,7 +144,7 @@ function App() {
                 <span>CSS</span>
               </div>
               <div className="project-links">
-                <a href="#" className="project-link">View Live</a>
+                <a href="#projects" className="project-link">View Live</a>
               </div>
             </div>
             <div className="project-card">
@@ -159,7 +159,7 @@ function App() {
                 <span>WordPress</span>
               </div>
               <div className="project-links">
-                <a href="#" className="project-link">View Live</a>
+                <a href="#projects" className="project-link">View Live</a>
               </div>
             </div>
             <div className="project-card">
@@ -177,7 +177,7 @@ function App() {
                 <span>CSS</span>
               </div>
               <div className="project-links">
-                <a href="#" className="project-link">View Live</a>
+                <a href="#projects" className="project-link">View Live</a>
               </div>
             </div>
             <div className="project-card">
@@ -196,7 +196,7 @@ function App() {
                 <span>Socket.io</span>
               </div>
               <div className="project-links">
-                <a href="#" className="project-link">View Live</a>
+                <a href="#projects" className="project-link">View Live</a>
                 <a href="https://github.com/yourusername/devcollab" className="project-link">GitHub</a>
               </div>
             </div>
