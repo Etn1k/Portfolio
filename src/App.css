@@ -475,7 +475,7 @@ h2 {
 /* Responsive */
 @media (max-width: 768px) {
    .menu-toggle {
-    display: block;
+    display: none;
   }
 
   .nav-links {
