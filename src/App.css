@@ -87,6 +87,13 @@ body {
   margin: 0;
 }
 
+.hero-content h2{
+   margin-bottom: 20px;
+    text-align: left;
+    font-family: serif;
+    text-decoration: underline;
+}
+
 .hero h1 {
   font-size: 3rem;
   margin-bottom: 0.5rem;
