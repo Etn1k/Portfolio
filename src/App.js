@@ -9,9 +9,9 @@ import devcollabImg from './assets/images/Dev.png';
 
 const projects = [
   {
-    title: 'Eli Villas', image: eliVillasImg, type: 'Real Estate Website', status: 'Live',
-    description: 'A polished luxury villa showcase with property listings, immersive galleries, contact flows, and responsive design.',
-    tech: ['HTML', 'CSS', 'JavaScript'], url: 'https://dev-elivillas.pantheonsite.io/'
+    title: 'Yes Education', image: yesEducationImg, type: 'Educational Website', status: 'Live & Sold',
+    description: 'An information-rich education platform covering courses, faculty, admissions, and the latest school updates.',
+    tech: ['WordPress'], url: 'https://isi-al.com/'
   },
   {
     title: 'Sy Ar Yo', image: syArYoImg, type: 'Construction Company Website', status: 'Live',
@@ -19,9 +19,9 @@ const projects = [
     tech: ['WordPress', 'CSS'], url: 'https://dev-sy-ar-oy.pantheonsite.io/'
   },
   {
-    title: 'Yes Education', image: yesEducationImg, type: 'Educational Website', status: 'Live & Sold',
-    description: 'An information-rich education platform covering courses, faculty, admissions, and the latest school updates.',
-    tech: ['WordPress'], url: 'https://isi-al.com/'
+    title: 'Eli Villas', image: eliVillasImg, type: 'Real Estate Website', status: 'Live',
+    description: 'A polished luxury villa showcase with property listings, immersive galleries, contact flows, and responsive design.',
+    tech: ['HTML', 'CSS', 'JavaScript'], url: 'https://dev-elivillas.pantheonsite.io/'
   },
   {
     title: 'Dental Glossary', image: dentalGlossaryImg, type: 'Educational Tool', status: 'Online',
