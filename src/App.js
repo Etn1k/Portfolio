@@ -1,5 +1,5 @@
 import './App.css';
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import eliVillasImg from './assets/images/Eli.png';
 import syArYoImg from './assets/images/Sy-Ar.png';
@@ -48,6 +48,15 @@ function App() {
   const contactFormRef = useRef(null);
 
   const closeMenu = () => setMenuOpen(false);
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const hasTrackingParameters = [...params.keys()].some((key) => key === 'fbclid' || key.startsWith('utm_'));
+
+    if (window.location.hash || hasTrackingParameters) {
+      window.history.replaceState(null, '', window.location.pathname);
+    }
+  }, []);
 
   const handleContactSubmit = async (event) => {
     event.preventDefault();
