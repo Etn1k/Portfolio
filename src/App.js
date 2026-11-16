@@ -31,7 +31,7 @@ const projects = [
   {
     title: 'DevCollab', image: devcollabImg, type: 'Developer Collaboration Platform', status: 'GitHub Project',
     description: 'A collaborative workspace concept for sharing code, tracking projects, and connecting development teams.',
-    tech: ['React', 'Node.js', 'Socket.io'], url: '#projects', github: 'https://github.com/yourusername/devcollab'
+    tech: ['React', 'Node.js', 'Socket.io'], url: 'https://dev-planner-two.vercel.app/', github: 'https://github.com/yourusername/devcollab'
   }
 ];
 
